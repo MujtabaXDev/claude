@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet Claude, an AI assistant built to help you think, create, analyze, and get more done.">
+  <title>Claude | Thoughtful AI for ambitious work</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#1f1d1b",
+            cream: "#f7f4ef",
+            clay: "#d97757",
+            "clay-dark": "#b95d40",
+            mist: "#e8e2d9"
+          },
+          fontFamily: {
+            display: ["Georgia", "serif"],
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 24px 80px rgba(60, 48, 39, 0.10)"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 10% 0%, rgba(217, 119, 87, 0.12), transparent 28rem),
+        radial-gradient(circle at 100% 18%, rgba(232, 226, 217, 0.9), transparent 30rem),
+        #f7f4ef;
+    }
+
+    .grid-lines {
+      background-image: linear-gradient(rgba(31, 29, 27, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31, 29, 27, 0.045) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+    }
+
+    .orb {
+      animation: float 7s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-14px) rotate(3deg); }
+    }
+  </style>
+</head>
+<body class="font-sans text-ink antialiased">
+  <header class="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
+    <a href="#" class="flex items-center gap-3" aria-label="Claude home">
+      <span class="grid h-10 w-10 place-items-center rounded-full bg-ink text-lg font-semibold text-cream">C</span>
+      <span class="text-lg font-semibold tracking-tight">claude</span>
+    </a>
+    <nav class="hidden items-center gap-8 text-sm text-ink/65 md:flex" aria-label="Main navigation">
+      <a class="transition hover:text-ink" href="#capabilities">Capabilities</a>
+      <a class="transition hover:text-ink" href="#approach">Our approach</a>
+      <a class="transition hover:text-ink" href="#use-cases">Use cases</a>
+    </nav>
+    <a href="#start" class="rounded-full border border-ink/15 bg-white/60 px-5 py-2.5 text-sm font-medium transition hover:border-ink hover:bg-white">Get started <span aria-hidden="true">-></span></a>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="grid-lines absolute inset-0 -z-10"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-6 pb-24 pt-14 lg:grid-cols-[1.08fr_.92fr] lg:px-10 lg:pb-32 lg:pt-20">
+        <div>
+          <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-clay/25 bg-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-clay-dark">
+            <span class="h-2 w-2 rounded-full bg-clay"></span>
+            Meet Claude
+          </p>
+          <h1 class="max-w-3xl font-display text-6xl leading-[0.98] tracking-[-0.04em] sm:text-7xl lg:text-[6.75rem]">I am Claude.<br><span class="text-clay">Let's think</span><br>together.</h1>
+          <p class="mt-8 max-w-xl text-lg leading-8 text-ink/65 sm:text-xl">
+            A thoughtful AI partner for writing, analysis, coding, research, and the complex work that matters to you.
+          </p>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="#start" class="inline-flex items-center justify-center rounded-full bg-ink px-7 py-4 text-sm font-semibold text-cream transition hover:-translate-y-0.5 hover:bg-clay-dark">Start a conversation <span class="ml-3 text-lg">-></span></a>
+            <a href="#capabilities" class="inline-flex items-center justify-center rounded-full border border-ink/15 bg-white/50 px-7 py-4 text-sm font-semibold transition hover:border-ink hover:bg-white">Explore what I do</a>
+          </div>
+          <p class="mt-7 text-xs text-ink/45">Clear thinking. Careful answers. Built for real work.</p>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-lg">
+          <div class="orb relative aspect-square overflow-hidden rounded-[3rem] bg-ink p-8 shadow-soft sm:p-12">
+            <div class="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-clay/80 blur-2xl"></div>
+            <div class="absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-[#ead5bc]/40 blur-3xl"></div>
+            <div class="relative flex h-full flex-col justify-between rounded-[2.25rem] border border-white/15 bg-white/10 p-7 text-cream backdrop-blur-sm sm:p-9">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-medium text-white/60">Claude / 01</span>
+                <span class="flex items-center gap-2 text-xs text-white/60"><span class="h-2 w-2 rounded-full bg-green-300"></span>Ready to help</span>
+              </div>
+              <div>
+                <div class="mb-7 grid h-20 w-20 place-items-center rounded-3xl bg-cream text-5xl font-display text-ink">C</div>
+                <p class="max-w-xs font-display text-4xl leading-tight">Curiosity is a powerful way forward.</p>
+              </div>
+              <div class="flex items-end justify-between text-sm text-white/55">
+                <span>Helpful by design</span>
+                <span>2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-5 -left-5 hidden rounded-2xl border border-ink/10 bg-white/90 px-5 py-4 shadow-lg sm:block">
+            <p class="text-xs uppercase tracking-widest text-ink/45">Designed for</p>
+            <p class="mt-1 font-display text-xl">Human potential</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="mx-auto max-w-7xl scroll-mt-10 px-6 py-24 lg:px-10">
+      <div class="mb-14 max-w-2xl">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-clay-dark">What I do</p>
+        <h2 class="font-display text-4xl leading-tight tracking-tight sm:text-5xl">More than answers.<br>Momentum.</h2>
+        <p class="mt-5 text-lg leading-8 text-ink/60">I help turn a blank page, a difficult question, or a mountain of information into a clear next step.</p>
+      </div>
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-3xl bg-white p-7 shadow-soft">
+          <div class="mb-12 text-3xl">✦</div>
+          <h3 class="font-display text-2xl">Create</h3>
+          <p class="mt-3 text-sm leading-6 text-ink/60">Draft ideas, shape your voice, and make writing that feels distinctly yours.</p>
+        </article>
+        <article class="rounded-3xl bg-[#eae3d9] p-7">
+          <div class="mb-12 text-3xl">◎</div>
+          <h3 class="font-display text-2xl">Understand</h3>
+          <p class="mt-3 text-sm leading-6 text-ink/60">Make sense of complex topics, documents, data, and decisions with confidence.</p>
+        </article>
+        <article class="rounded-3xl bg-ink p-7 text-cream shadow-soft">
+          <div class="mb-12 text-3xl text-clay">⌘</div>
+          <h3 class="font-display text-2xl">Build</h3>
+          <p class="mt-3 text-sm leading-6 text-white/55">Write, debug, explain, and improve code from first concept to final commit.</p>
+        </article>
+        <article class="rounded-3xl bg-clay p-7 text-cream">
+          <div class="mb-12 text-3xl">↗</div>
+          <h3 class="font-display text-2xl">Move forward</h3>
+          <p class="mt-3 text-sm leading-6 text-white/75">Plan projects, explore possibilities, and turn good intentions into progress.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="approach" class="scroll-mt-10 bg-ink text-cream">
+      <div class="mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-2 lg:px-10 lg:py-28">
+        <div>
+          <p class="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-clay">My approach</p>
+          <h2 class="max-w-xl font-display text-4xl leading-tight tracking-tight sm:text-5xl">Useful intelligence, with a human point of view.</h2>
+          <p class="mt-6 max-w-lg text-lg leading-8 text-white/55">I am designed to be capable and careful at the same time. I can move quickly, but I will slow down when the details matter.</p>
+        </div>
+        <div class="space-y-8">
+          <div class="border-t border-white/15 pt-6">
+            <p class="mb-2 text-sm text-clay">01 / Thoughtful</p>
+            <h3 class="font-display text-2xl">I meet you where you are.</h3>
+            <p class="mt-2 max-w-md text-sm leading-6 text-white/50">Whether you need a quick answer or a deep partner in problem-solving, I adapt to your context and goals.</p>
+          </div>
+          <div class="border-t border-white/15 pt-6">
+            <p class="mb-2 text-sm text-clay">02 / Clear</p>
+            <h3 class="font-display text-2xl">I make the complex approachable.</h3>
+            <p class="mt-2 max-w-md text-sm leading-6 text-white/50">I organize information, explain tradeoffs, and communicate in a way that helps you decide and act.</p>
+          </div>
+          <div class="border-t border-white/15 pt-6">
+            <p class="mb-2 text-sm text-clay">03 / Responsible</p>
+            <h3 class="font-display text-2xl">I take your trust seriously.</h3>
+            <p class="mt-2 max-w-md text-sm leading-6 text-white/50">I aim to be honest about uncertainty, respect your intent, and support better outcomes for people.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases" class="mx-auto max-w-7xl scroll-mt-10 px-6 py-24 lg:px-10">
+      <div class="mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+        <div>
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-clay-dark">In practice</p>
+          <h2 class="font-display text-4xl tracking-tight sm:text-5xl">Bring me the hard stuff.</h2>
+        </div>
+        <p class="max-w-sm text-sm leading-6 text-ink/55">From your first spark of an idea to the last detail of delivery, I am here to help you do your best work.</p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-ink/10 bg-white/60 p-6"><p class="text-sm text-ink/45">For teams</p><p class="mt-8 font-display text-2xl">Turn meetings into momentum.</p></div>
+        <div class="rounded-2xl border border-ink/10 bg-white/60 p-6"><p class="text-sm text-ink/45">For makers</p><p class="mt-8 font-display text-2xl">Go from idea to prototype.</p></div>
+        <div class="rounded-2xl border border-ink/10 bg-white/60 p-6"><p class="text-sm text-ink/45">For learners</p><p class="mt-8 font-display text-2xl">Make every question count.</p></div>
+      </div>
+    </section>
+
+    <section id="start" class="mx-auto max-w-7xl scroll-mt-10 px-6 pb-24 lg:px-10">
+      <div class="overflow-hidden rounded-[2rem] bg-clay px-7 py-14 text-cream sm:px-14 sm:py-16">
+        <div class="flex flex-col justify-between gap-10 md:flex-row md:items-end">
+          <div>
+            <p class="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-white/65">Your next thought starts here</p>
+            <h2 class="max-w-2xl font-display text-4xl leading-tight sm:text-6xl">What are you working on?</h2>
+          </div>
+          <a href="#" class="inline-flex shrink-0 items-center justify-center rounded-full bg-cream px-7 py-4 text-sm font-semibold text-ink transition hover:bg-white">Talk to Claude <span class="ml-3 text-lg">-></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-ink/10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-ink/50 sm:flex-row sm:items-center sm:justify-between lg:px-10">
+      <p class="font-semibold text-ink">claude</p>
+      <p>Thoughtful AI for ambitious work.</p>
+      <p>Made for people, built with care.</p>
+    </div>
+  </footer>
+</body>
+</html>
